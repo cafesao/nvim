@@ -19,7 +19,16 @@ end
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" }
+  cmd = { "typescript-language-server", "--stdio" },
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+      includeCompletionsWithSnippetText = true,
+      includeCompletionsForImportStatements = true,
+      includeCompletionsWithClassMemberSnippets = true,
+      includeCompletionsWithObjectLiteralMethodSnippets = true
+    }
+  }
 }
 
 -- Markdown

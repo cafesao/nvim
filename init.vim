@@ -1,5 +1,6 @@
 call plug#begin()
     Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+    Plug 'Mofiqul/dracula.nvim'
     Plug 'feline-nvim/feline.nvim'
     Plug 'nvim-tree/nvim-web-devicons'
     Plug 'lewis6991/gitsigns.nvim'
@@ -12,6 +13,8 @@ call plug#begin()
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/nvim-cmp'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'HerringtonDarkholme/yats.vim'
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'windwp/nvim-ts-autotag'
     Plug 'windwp/nvim-autopairs'
@@ -79,8 +82,19 @@ nnoremap q <c-v>
 " autocmd """"""""""
 " autocmds aqui
 
-colorscheme tokyonight-storm
+colorscheme dracula
 
 " Vim Script
-let g:lightline = {'colorscheme': 'tokyonight'}
+let g:lightline = {'colorscheme': 'dracula'}
 let g:airline#extensions#tabline#enabled = 0
+
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-actions',
+  \ 'coc-lists',
+  \ 'coc-tsserver',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-prettier',
+  \ 'coc-vimlsp',
+  \ ]
