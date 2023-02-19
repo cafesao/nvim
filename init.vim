@@ -15,7 +15,7 @@ call plug#begin()
     Plug 'hrsh7th/nvim-cmp'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'HerringtonDarkholme/yats.vim'
-    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'windwp/nvim-ts-autotag'
     Plug 'windwp/nvim-autopairs'
     Plug 'nvim-telescope/telescope.nvim'

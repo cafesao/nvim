@@ -5,12 +5,9 @@ if (not status) then return end
 ts.setup {
   highlight = {
     enable = true,
-    disable = {},
+    use_languagetree = true,
   },
-  indent = {
-    enable = true,
-    disable = {},
-  },
+  indent = { enable = true },
   ensure_installed = {
     'tsx',
     'toml',
