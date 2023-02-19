@@ -29,6 +29,7 @@ call plug#begin()
     Plug 'williamboman/mason.nvim'
     Plug 'williamboman/mason-lspconfig.nvim'
     Plug 'folke/trouble.nvim'
+    Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
 
 " Global Sets """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
