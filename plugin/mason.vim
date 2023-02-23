@@ -9,7 +9,7 @@ if (not status2) then return end
 local nvim_lsp = require "lspconfig"
 
 lspconfig.setup {
-  ensure_installed = { "sumneko_lua", "tailwindcss" },
+  ensure_installed = { "lua_ls", "tailwindcss" },
   }
 
 nvim_lsp.tailwindcss.setup {}
